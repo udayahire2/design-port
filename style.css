@@ -23,7 +23,7 @@ body {
   max-width: 1200px;
   height: 4200px;
   background-color: #ffff;
-  gap: 6rem;
+  gap: 8rem;
 }
 #header {
   padding: 12px 24px;
@@ -66,6 +66,7 @@ body {
 }
 #header .right button:nth-child(1):hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 #header .right button:nth-child(2) {
   display: flex;
@@ -82,6 +83,33 @@ body {
 #header .right button .plus:hover {
   border-radius: 4px;
   background: #3a3a3a;
+}
+.hidden {
+  display: none;
+}
+
+#dropdownNav {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: #171717;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+}
+
+#dropdownNav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#dropdownNav li {
+  margin: 10px 0;
+}
+
+#dropdownNav a {
+  color: white;
+  text-decoration: none;
 }
 #hero {
   position: relative;
@@ -138,12 +166,16 @@ body {
   padding: 6px 12px;
   border-radius: 4px;
 }
+.btn-section button:hover {
+  cursor: pointer;
+}
 .btn-section button:nth-child(1) {
   background: #000;
   color: white;
   display: flex;
   align-items: center;
   gap: 2.5px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
 }
 .btn-section button:nth-child(2) {
   border: 1px solid #737373;
@@ -212,4 +244,58 @@ body {
   display: block;
   border: 2px solid black;
   box-shadow: 0 4px 18.6px rgba(0, 0, 0, 0.5);
+}
+
+#about {
+  display: flex;
+  gap: 1px;
+}
+#about #left {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: flex-start;
+  gap: 24px;
+  background: #0a0a0a;
+  color: #fafafa;
+  
+}
+#left #main h1{
+  font-size: 1.5rem;
+
+}
+#about #right {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+#about #right section h1{
+ font-size: 2rem;
+ font-weight: 600;
+  
+}
+
+.about-btn {
+  display: flex;
+  gap: 6px;
+  padding: 6px 12px;
+  color: #0a0a0a;
+  border-radius: 12px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.about-btn-section{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
 }
